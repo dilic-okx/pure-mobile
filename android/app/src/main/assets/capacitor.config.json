@@ -1,0 +1,30 @@
+{
+	"appId": "com.fiveloyalty.pureuk",
+	"appName": "Pure",
+	"bundledWebRuntime": false,
+	"npmClient": "npm",
+	"webDir": "build",
+	"cordova": {},
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 5000,
+			"launchAutoHide": false,
+			"SplashScreenShowOptions": {
+                "fadeInDuration": 700
+			},
+			"SplashScreenHideOptions": {
+                "fadeOutDuration": 1000
+			},
+			"backgroundColor": "#ffffffff",
+			"androidSplashResourceName": "splash",
+			"androidScaleType": "CENTER_CROP",
+			"androidSpinnerStyle": "large",
+			"iosSpinnerStyle": "small",
+			"spinnerColor": "#000000",
+			"showSpinner": false
+		},
+		"PushNotifications": {
+			"presentationOptions": ["badge", "sound", "alert"]
+		  }
+	}
+}

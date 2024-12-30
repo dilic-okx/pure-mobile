@@ -1,0 +1,51 @@
+.delivery-address-bg {
+	--background: transparent none;
+	--ion-color-white: transparent;
+	background-color: #fff;
+	background-image: url(../../assets/images/page-01.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 24px;
+	background-size: 100% auto;
+}
+
+.address-checking-box {
+	min-height: 80px;
+}
+
+#main>ion-content.route-delivery-address-check {
+	z-index: 10;
+}
+
+.route-delivery-address-check .restaurant-card {
+	position: absolute;
+	top: 0;
+	border-radius: 0;
+}
+
+.route-delivery-address-check .restaurant-card > ion-card-content {
+	height: 100%;
+}
+
+
+.web #main>ion-content.route-delivery-address-check {
+	z-index: 5;
+}
+
+.web .delivery-address-bg {
+	background-image: none;
+	background-color: transparent;
+}
+
+.web ion-content.route-delivery-address-check {
+	--ion-color-base: transparent;
+	--background: transparent url(../../assets/images/page-05.jpg) repeat-y 0 0 / 100% auto;
+}
+
+.web .route-delivery-address-check .delivery-option-label {
+	display: none;
+}
+
+.web .delivery-address-bg {
+	background-position: 100% 0;
+	background-repeat: repeat-y;
+}

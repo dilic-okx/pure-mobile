@@ -1,0 +1,125 @@
+ion-header.static {
+	margin-bottom: -48px;
+	z-index: 5;
+}
+
+ion-toolbar {
+	--border-color: #fff;
+}
+
+ion-toolbar.primary-toolbar {
+	--min-height: 80px;
+	--background: var(--ion-color-white) url(../../assets/images/logo-main.png) no-repeat 50% 50%/auto 90%;
+}
+
+ion-header.static ion-toolbar:last-child {
+	--min-height: var(--ion-toolbar-min-height);
+}
+
+ion-button.solo-button {
+	--padding-start: 6px;
+	--padding-end: 6px;
+}
+
+ion-button.basket-button {
+	/* width: 45px; */
+	height: 41px;
+}
+
+ion-button.basket-button > div > div > .badge, ion-button.basket-button > div > div > .badge-small {
+	position: absolute;
+	bottom: 0;
+	width: 20px;
+	height: 20px;
+	right: -4px;
+	z-index: 1;
+	padding: 4px 1px;
+	font-size: 12px;
+	border-radius: 60px;
+}
+
+ion-button.basket-button > div > div > .badge-small {
+	width: 18px;
+	height: 18px;
+	right: -2px;
+	padding: 2px 0 0 0;
+}
+
+ion-button.basket-button > div > .basket-icon-wrapper {
+	position: relative;
+}
+
+ion-button.basket-button > div > div> ion-icon {
+	font-size: 30px
+}
+
+.primary-toolbar .button {
+	color: var(--ion-color-dark);
+}
+
+.image-button {
+	flex: 1;
+	background: transparent;
+	--ripple-color: transparent;
+}
+
+.web ion-header.static {
+	position: absolute;
+	right: 0;
+	background: transparent none;
+	min-height: var(--ion-toolbar-min-height);
+	height: auto;
+	margin: 0;
+	z-index: 6;
+	pointer-events: none;
+}
+
+.web ion-header.static ion-buttons {
+	pointer-events: all;
+}
+
+.web ion-toolbar.primary-toolbar {
+	--background: transparent none;
+}
+
+.web ion-toolbar.primary-toolbar ion-buttons:first-of-type,
+.web ion-toolbar.primary-toolbar ion-buttons:last-of-type,
+.web ion-toolbar.dynamic-header ion-buttons:first-of-type {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.web ion-toolbar.primary-toolbar ion-button.image-button {
+	display: none;
+}
+
+.web ion-header.static > ion-toolbar:last-child {
+	display: none;
+}
+
+.web ion-button.basket-button > div > div > ion-badge.badge-small {
+	--ion-color-primary: var(--ion-color-tertiary);
+	color: var(--ion-color-black);
+	font-size: 9px;
+	min-width: 15px;
+	text-align: center;
+	--padding-top: 3px;
+	--padding-bottom: 3px;
+	--padding-start: 3px;
+	--padding-end: 3px;
+	width: auto;
+	height: auto;
+	right: 0;
+	border-radius: 8px;
+	padding: 3px;
+}
+
+.web ion-button.basket-button > div > div:last-child {
+	--ion-color-gray: var(--ion-color-secondary);
+}
+/*
+@supports (-webkit-overflow-scrolling: touch) {
+	ion-toolbar.primary-toolbar {
+		--background: var(--ion-color-white) url(../../assets/images/logo-main.png) no-repeat 50% 50%/auto 90%;
+	}
+}
+*/

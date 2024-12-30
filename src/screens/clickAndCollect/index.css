@@ -1,0 +1,136 @@
+ion-content div.restaurant-gradient {
+	background-image: url(../../assets/images/click-n-collect-01.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: 200% auto;
+}
+
+.restaurant-card {
+	border-radius: var(--ion-card-radius);
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	margin: 0;
+}
+
+.click-collect-pickers-backdrop {
+	position: fixed;
+		top: 0;
+		left: 0;
+    background-color: black;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+.click-collect-dialog {
+	position: fixed;
+	margin: 0 auto;
+	background-color: #fff;
+	width: 70%;
+	height: 50%;
+	border-radius: 10px;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -45%);
+	transition: all .3s ease-out;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.click-collect-dialog.show-up {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(-50%, -50%);
+	pointer-events: auto;
+}
+
+.click-collect-dialog-layout {
+	height: 100%;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	padding: 5px 13px;
+}
+
+.click-collect-dialog.sc-ion-modal-md {
+	border-radius: var(--border-radius);
+	width: var(--width);
+	min-width: var(--min-width);
+	max-width: var(--max-width);
+	height: var(--height);
+	min-height: var(--min-height);
+	max-height: var(--max-height);
+	border-width: var(--border-width);
+	border-style: var(--border-style);
+	border-color: var(--border-color);
+	background: var(--background);
+	-webkit-box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow);
+	overflow: var(--overflow);
+	z-index: 10;
+}
+
+.click-collect-dialog-header {
+	flex: 0 1 auto;
+	padding: 10px 5px;
+}
+
+.click-collect-dialog-header h3 {
+	font-size: 14px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.click-collect-dialog-closer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.click-collect-dialog-closer ion-icon {
+	font-size: 20px;
+}
+
+.click-collect-dialog-content {
+	flex: 1 1 auto;
+	padding: 12px;
+	overflow-y: auto;
+}
+
+.click-collect-dialog-action {
+	flex: 0 1 auto;
+}
+
+.click-collect-dialog-action ion-button {
+	height: 36px;
+}
+
+
+@keyframes popupAnimation {
+	0% {
+
+	}
+
+	75% {
+
+	}
+
+	100% {
+
+	}
+}
+
+.web ion-content.route-click-and-collect {
+	--ion-color-base: transparent;
+	--background: transparent url(../../assets/images/page-05.jpg) repeat-y 0 0 / 100% auto;
+}

@@ -1,0 +1,51 @@
+.mbsc-select-input.mbsc-control {
+  width: 100%;
+  color: var(--ion-color-dark);
+  padding: 10px 8px 10px 0;
+  border: 0 none;
+  border-color: var(--ion-item-border-color,var(--ion-border-color,var(--ion-color-step-150,rgba(0,0,0,0.13))));
+  outline: none;
+}
+
+.mbsc-select-input.mbsc-control::placeholder {
+  color: var(--ion-color-dark);
+  opacity: 0.33;
+}
+
+.mbsc-ios .mbsc-fr-btn {
+  color: var(--ion-color-primary,#3880ff);
+  font-size: 17px;
+}
+
+.select-picker-label {
+  display: block;
+  font-size: 10px;
+  color: var(--ion-item-color);
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+.select-picker-label--primary {
+  color: var(--ion-color-primary,#3880ff);
+}
+
+.mbsc-fr-btn-w .mbsc-fr-btn-s {
+  border: 0;
+}
+
+.mbsc-ios.mbsc-fr-center .mbsc-fr-btn-w {
+  border: 0;
+}
+
+.mbsc-ios.mbsc-fr-center .mbsc-fr-btn-cont {
+  border: 1px solid var(--ion-item-border-color,var(--ion-border-color,var(--ion-color-step-150,rgba(0,0,0,0.13))));
+}
+
+.mbsc-ios .mbsc-sc-whl-gr-3d .mbsc-sc-itm-3d {
+  color: #a3a3a3;
+}
+
+.mbsc-ios .mbsc-sc-itm-sel {
+  color: #000;
+  color: var(--ion-color-primary,#3880ff) !important;
+}

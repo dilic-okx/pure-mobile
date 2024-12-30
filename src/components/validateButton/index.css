@@ -1,0 +1,30 @@
+.validate-button-wrapper {
+    height: 45px;
+}
+
+.validate-button-wrapper ion-row {
+    width: 165px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid var(--ion-color-gray);
+    margin-bottom: 25px;
+    color: var(--ion-color-gray);
+}
+
+.validate-button-wrapper ion-row ion-col div ion-icon {
+    font-size: 19px;
+    color: var(--ion-color-gray);
+}
+
+.validate-button-wrapper ion-row ion-col.verified-right{
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    justify-self: flex-start;
+    flex-grow: 3;
+}
+
+.web .validate-button-wrapper.unverified ion-row {
+    cursor: pointer;
+}

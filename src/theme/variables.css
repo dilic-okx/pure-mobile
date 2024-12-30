@@ -1,0 +1,278 @@
+/* Ionic Variables and Theming. For more info, please see:
+http://ionicframework.com/docs/theming/ */
+
+@font-face {
+	font-family: 'Clarendon';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/fonts/clarendon-bt-light/clarendon-bt-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/clarendon-bt-light/clarendon-bt-light-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Clarendon';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../assets/fonts/clarendon/clarendon-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/clarendon/clarendon-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'InterstateCondMono';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/fonts/interstate-cond-mono-regular/interstate-cond-mono-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/interstate-cond-mono-regular/interstate-cond-mono-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'InterstateCondMono';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../assets/fonts/interstate-cond-mono-bold/interstate-cond-mono-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/interstate-cond-mono-bold/interstate-cond-mono-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'InterstateCond';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../assets/fonts/interstate-cond-bold/interstate-cond-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/interstate-cond-bold/interstate-cond-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'HFormosa';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/fonts/hanoded-formosa/hanoded-formosa-webfont.woff2') format('woff2'),
+         url('../assets/fonts/hanoded-formosa/hanoded-formosa-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'HFormosaUpright';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/fonts/hanoded-formosa-upright/hanoded-formosa-upright-webfont.woff2') format('woff2'),
+         url('../assets/fonts/hanoded-formosa-upright/hanoded-formosa-upright-webfont.woff') format('woff');
+}
+
+/** Ionic CSS Variables **/
+:root {
+	/** primary **/
+	--ion-color-primary: #f8bbab;
+  --ion-color-primary-rgb: 248,187,171;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0,0,0;
+  --ion-color-primary-shade: #e98c75;
+  --ion-color-primary-tint: #fcd6cd;
+
+	/** secondary **/
+	--ion-color-secondary: #bddcf2;
+  --ion-color-secondary-rgb: 189,220,242;
+  --ion-color-secondary-contrast: #222222;
+  --ion-color-secondary-contrast-rgb: 34,34,34;
+  --ion-color-secondary-shade: #59a8d2;
+  --ion-color-secondary-tint: #d0e8f6;
+
+	/** tertiary **/
+	--ion-color-tertiary: #5f8dda;
+  --ion-color-tertiary-rgb: 95,141,218;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255,255,255;
+  --ion-color-tertiary-shade: #2657a2;
+  --ion-color-tertiary-tint: #a2bce3;
+
+	/** success **/
+	--ion-color-success: #10dc60;
+	--ion-color-success-rgb: 16, 220, 96;
+	--ion-color-success-contrast: #ffffff;
+	--ion-color-success-contrast-rgb: 255, 255, 255;
+	--ion-color-success-shade: #0ec254;
+	--ion-color-success-tint: #28e070;
+
+	/** warning **/
+	--ion-color-warning: #ffce00;
+	--ion-color-warning-rgb: 255, 206, 0;
+	--ion-color-warning-contrast: #ffffff;
+	--ion-color-warning-contrast-rgb: 255, 255, 255;
+	--ion-color-warning-shade: #e0b500;
+	--ion-color-warning-tint: #ffd31a;
+
+	/** danger **/
+	--ion-color-danger: #f04141;
+	--ion-color-danger-rgb: 245, 61, 61;
+	--ion-color-danger-contrast: #ffffff;
+	--ion-color-danger-contrast-rgb: 255, 255, 255;
+	--ion-color-danger-shade: #d33939;
+	--ion-color-danger-tint: #f25454;
+
+	/** dark **/
+	--ion-color-dark: #333;
+	--ion-color-dark-rgb: 51, 51, 51;
+	--ion-color-dark-contrast: #ffffff;
+	--ion-color-dark-contrast-rgb: 255, 255, 255;
+	--ion-color-dark-shade: #111;
+	--ion-color-dark-tint: #555;
+	
+	/** gray **/
+	--ion-color-gray: #9b9b9b;
+	--ion-color-gray-rgb: 155, 155, 155;
+	--ion-color-gray-contrast: #ffffff;
+	--ion-color-gray-contrast-rgb: 255, 255, 255;
+	--ion-color-gray-shade: #858585;
+	--ion-color-gray-tint: #a1a1a1;
+	
+	/** greenlight **/
+		--ion-color-greenlight: #C1D5AE;
+  	--ion-color-greenlight-rgb: 193,213,174;
+  	--ion-color-greenlight-contrast: #000000;
+  	--ion-color-greenlight-contrast-rgb: 0,0,0;
+  	--ion-color-greenlight-shade: #aabb99;
+		--ion-color-greenlight-tint: #c7d9b6;
+		
+	/** light **/
+	--ion-color-light: #ebebeb;
+	--ion-color-light-rgb: 235, 235, 235;
+	--ion-color-light-contrast: #000000;
+	--ion-color-light-contrast-rgb: 0, 0, 0;
+	--ion-color-light-shade: #d4d4d4;
+	--ion-color-light-tint: #f1f1f1;
+
+	/** superlight **/
+	--ion-color-superlight: #f4f4f4;
+	--ion-color-superlight-rgb: 244, 244, 244;
+	--ion-color-superlight-contrast: #000000;
+	--ion-color-superlight-contrast-rgb: 0, 0, 0;
+	--ion-color-superlight-shade: #ebebeb;
+	--ion-color-superlight-tint: #f9f9f9;
+
+	/** white **/
+	--ion-color-white: #fff;
+	--ion-color-white-rgb: 255, 255, 255;
+	--ion-color-white-contrast: #222;
+	--ion-color-white-contrast-rgb: 34, 34, 34;
+	--ion-color-white-shade: #d7d8da;
+	--ion-color-white-tint: #f5f6f9;
+	
+	/** black **/
+	--ion-color-black: #111;
+	--ion-color-black-rgb: 17, 17, 17;
+	--ion-color-black-contrast: #eee;
+	--ion-color-black-contrast-rgb: 238, 238, 238;
+	--ion-color-black-shade: #000;
+	--ion-color-black-tint: #555;
+	
+	/** form **/
+	--ion-color-form-label: #b0abab;
+	--ion-color-form-label-dark: #1e191a;
+	--ion-color-note: var(--ion-color-dark);
+	
+	/** custom values **/
+	--ion-color-box-holder: transparent;
+	--ion-separator-color: #e6e6e6;
+	--ion-feedback-label: #727272;
+	--ion-top-small: 5px;
+	--ion-top-medium: 30px;
+	--ion-feedback-star: #9ba1a5;
+	--ion-location-arrow: #ccc;
+	
+	/** original theme file colors **/
+	--ion-headings-font-weight: 300;
+	
+	--ion-color-angular: #ac282b;
+	--ion-color-communication: #8e8d93;
+	--ion-color-tooling: #fe4c52;
+	--ion-color-services: #fd8b2d;
+	--ion-color-design: #fed035;
+	--ion-color-workshop: #69bb7b;
+	--ion-color-food: #3bc7c4;
+	--ion-color-documentation: #b16be3;
+	--ion-color-navigation: #6600cc;
+	
+	--ion-padding: 32px;
+	--ion-toolbar-min-height: 48px;
+	
+	--ion-card-radius: 20px;
+	--ion-item-color: var(--ion-color-dark);
+	--ion-item-background: transparent;
+	--ion-text-color: #000;
+	--ion-circle-color: rgb(232,231,233);
+	
+	/** fonts **/
+	--ion-font-family: 'Clarendon', 'Times New Roman', Times, serif;
+	--ion-default-font: 'Clarendon', 'Times New Roman', Times, serif;
+	--ion-font-size: 13px;
+
+	--okx-font-primary: var(--ion-default-font);
+	--okx-font-primary-variant: , var(--okx-font-primary);
+	--okx-font-secondary: 'InterstateCondMono', Arial, helvetica, sans-serif, var(--okx-font-primary);
+	--okx-font-secondary-variant: 'InterstateCond', var(--okx-font-secondary);
+	--okx-font-tertiary: 'HFormosa', var(--okx-font-secondary);
+	--okx-font-tertiary-variant: 'HFormosaUpright', var(--okx-font-tertiary);
+	
+	/* okx vars */
+	--okx-drawer-max-width: 280px;
+	--okx-small-drawer-max-width: 90px;
+	--okx-drawer-width: var(--okx-drawer-max-width);
+	--okx-sidebar-width: var(--okx-drawer-max-width);
+	--okx-padding: var(--ion-padding);
+	--okx-padding-small: 16px;
+	--okx-padding-tiny: 8px;
+	--okx-margin: 16px;
+	--okx-flex-min: 5px;
+	--okx-flex-spacer: 20px;
+	--okx-big-label-font-size: 52px;
+	--okx-big-label-color: #000;
+	--okx-big-label-margin: 2px 0;
+	--okx-big-label-padding: 0;
+	--okx-title-font-size: 22px;
+	--okx-title-color: #000;
+	--okx-title-margin: 2px 0;
+	--okx-title-padding: 0;
+	--okx-subtitle-font-size: 18px;
+	--okx-subtitle-color: #222;
+	--okx-subtitle-margin: 25px 0;
+	--okx-subtitle-padding: 0;
+	--okx-sectiontitle-font-size: 14px;
+	--okx-sectiontitle-color: #222;
+	--okx-sectiontitle-margin: 20px 0;
+	--okx-sectiontitle-padding: 0;
+	--okx-font-size: var(--ion-font-size);
+	--okx-small-text-font-size: 11px;
+	--okx-tiny-text-font-size: 10px;
+	--okx-note-font-size: 12px;
+	--okx-error-font-size: 11px;
+	--okx-error-margin: 0 0 10px;
+	--okx-hr-margin: 20px auto;
+	--okx-border-color: var(--ion-item-border-color,var(--ion-border-color,var(--ion-color-step-150,rgba(0,0,0,0.13))));
+	--okx-drawer-padding: 32px;
+	--okx-box-radius: 10px;
+	--okx-box-padding-left: 15px;
+	--okx-box-padding-top: 15px;
+	--okx-box-padding-right: 15px;
+	--okx-box-padding-bottom: 15px;
+	--okx-small-radius: 5px;
+	--okx-normal-text-color: var(--ion-text-color);
+	--okx-light-text-color: var(--ion-color-gray);
+	--okx-circle-color: var(--ion-circle-color);
+	--okx-incrementer-button-width: 30px;
+	--okx-loyalty-badge-width: 140px;
+	--okx-loyalty-badge-inner-padding: 4px;
+	--okx-loyalty-bar-height: 50px;
+	--okx-cancel-button-color: rgba(255, 255, 255, .2);
+	/* --okx-scrollbar-handle-color: var(--ion-color-tertiary); */
+	--okx-scrollbar-handle-color: #dadce0;
+	--okx-scrollbar-track-color: var(--ion-color-light);
+	--okx-scrollbar-color: var(--okx-scrollbar-handle-color) var(--okx-scrollbar-track-color);
+	--okx-color-black: #000;
+	--okx-selected-menu-item-color: #384D75;
+}
+
+.web {
+	--okx-bsmodal-top: 180px;
+	--okx-bsmodal-width-lg: 500px;
+	--okx-bsmodal-width-md: 420px;
+	--okx-bsmodal-width-sm: 390px;
+	--okx-product-font-size: 14px;
+}

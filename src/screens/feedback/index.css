@@ -1,0 +1,111 @@
+.feedback-label {
+    font-size: 10px;
+    color: var(--ion-feedback-label);
+    margin: 5px;
+    font-weight: bold;
+}
+  
+.radio-row {
+    padding-left: 10px;
+}
+  
+.stars-row {
+    padding: 10px 5px 10px 10px;
+}
+  
+.star {
+    font-size: 18px;
+    color: var(--ion-feedback-star);
+    margin-right: 5px;
+}
+
+.web .star {
+	cursor: pointer;
+}
+  
+.box-holder-top {
+    margin-top: 20px;
+}
+
+.separator {
+    height: 1px;
+    background-color: var(--ion-separator-color);
+    margin: 0 5px;
+}
+
+.native-textarea.sc-ion-textarea-ios  {
+  padding-inline-start: 5px;
+}
+
+.commentService {
+  height: 50px;
+}
+
+.commentTech {
+  height: 160px;
+}
+
+.commentTech ion-textarea {
+	--padding-start: 0;
+}
+
+.item.sc-ion-label-ios-h, .item .sc-ion-label-ios-h {
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.item.sc-ion-label-ios-h, .item .sc-ion-label-md-h {
+  margin-left: 2px;
+}
+
+.web ion-content.route-feedback {
+	--background: transparent none;
+	--ion-color-white: transparent;
+	background-color: #fff;
+	background-image: url(../../assets/images/page-02.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: 100% auto;
+}
+
+.web #main > ion-content.route-feedback > .ion-padding {
+	width: 450px;
+	margin-left: 0;
+	height: 85%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.web .route-feedback .ion-padding .heading-wrapper,
+.web .route-feedback .ion-padding .frm-wrapper,
+.web .route-feedback .ion-padding .action-wrapper  {
+	padding: 0;
+}
+
+.web .route-feedback .ion-padding .frm-wrapper  {
+	position: absolute;
+	left: 32px;
+	right: 32px;
+	top: 100px;
+	bottom: 100px;
+	overflow-y: auto;
+	--ion-color-success: var(--ion-color-primary);
+}
+
+.web .route-feedback .ion-padding .action-wrapper  {
+	position: absolute;
+	left: 32px;
+	right: 32px;
+	bottom: 0;
+	padding-bottom: 32px;
+}
+
+.web .route-feedback .ion-padding ion-button:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (min-width: 1441px) {
+	.web #main > ion-content.route-feedback > .ion-padding {
+		height: 65%;
+	}
+}

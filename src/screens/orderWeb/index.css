@@ -1,0 +1,292 @@
+.web .route-order ion-toolbar.primary-toolbar {
+	--background: var(--ion-color-secondary) url(../../assets/images/logo-main.png) no-repeat 50% 50%/auto 90%;
+}
+
+.web .static.route-order + ion-toolbar.dynamic-header {
+	--ion-toolbar-background: var(--ion-color-secondary);
+}
+
+.web .order-list, .web .order-summary-sidebar {
+	top: 80px;
+}
+
+.web .order-list {
+	position: absolute;
+	left: 0;
+	right: var(--okx-sidebar-width);
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.web .order-list.order-list-full {
+	right: 0;
+}
+
+.web .order-summary-sidebar, .web .order-summary-sidebar::before, .web .order-summary-sidebar::after {
+	left: calc(100% - var(--okx-sidebar-width));
+}
+
+.web .order-summary-sidebar {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+}
+
+.web .order-summary-sidebar .add-items-row {
+	display: none;
+}
+
+.web .order-summary-sidebar::before, .web .order-summary-sidebar::after {
+	content: '';
+	position: fixed;
+	top: -200px;
+	bottom: 0;
+}
+
+.web .order-summary-sidebar::before {
+	width: 20px;
+	box-shadow: -13px 0px 13px rgba(0,0,0,.12);
+	z-index: 5;
+}
+
+.web .order-summary-sidebar::after {
+	right: 0;
+	background-color: #fff;
+}
+
+.web .order-summary-sidebar .absolute-content {
+	top: 0;
+	padding-top: 0;
+}
+
+.web .order-summary-sidebar .title {
+	font-size: var(--okx-subtitle-font-size);
+}
+
+.web .order-summary-sidebar .checkout div.righted:first-of-type {
+	visibility: hidden;
+}
+
+.web .order-summary-sidebar .cnc-ordering-for {
+	display: inline-block;
+	width: 90%;
+}
+
+.web .order-categories {
+	padding: 10px 10px 0 50px;
+}
+
+.web .order-categories h2 {
+	padding: 0;
+	font-size: var(--okx-title-font-size);
+}
+
+.web .order-categories-inner {
+	flex-wrap: wrap;
+}
+
+.web .order-categories-inner ion-button {
+	text-transform: none;
+	margin-right: 5px;
+}
+
+.web .order-content {
+	padding: 0 10px 20px 50px;
+}
+
+/* grid */
+
+.web .order-list-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	justify-items: stretch;
+	align-items: stretch;
+	row-gap: 15px;
+	column-gap: 15px;
+	padding-right: 10px;
+}
+
+.web .order-list-grid .order-list-item {
+	display: block;
+	width: auto;
+	margin-bottom: 0;
+	min-width: 0;
+	background-color: #fff;
+	padding: 8px;
+	padding-bottom: 2px;
+	/*border: 1px solid #eee;*/
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	cursor: pointer;
+}
+
+.web .order-list-grid .order-list-item .item-image {
+	width: 100%;
+	padding-top: 100%;
+	background-color: #f7f7f7;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	min-width: 0;
+	min-height: 0;
+	margin: 0;
+	display: block;
+	height: auto;
+	border-radius: 4px;
+}
+
+.web .order-list-grid .order-list-item .item-bar {
+	margin: 5px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.web .route-order .item-bar .item-name, .web .route-order .item-bar .item-price {
+	font-size: var(--okx-product-font-size);
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.web .route-order .item-bar .item-name.ellipsis {
+	white-space: normal;
+	text-overflow: unset;
+}
+
+.web .route-order .item-bar .item-price {
+	text-align: right;
+	align-self: center;
+	flex: 0 1 35%;
+}
+
+.web .route-order .item-bar .item-price > span:first-child {
+	font-size: inherit;
+	font-weight: normal;
+}
+
+.web .route-order .item-bar .item-price > span.original-price {
+	text-decoration: line-through;
+	font-size: calc(var(--okx-small-text-font-size) - 1px);
+}
+
+.web ion-modal.modal-classic {
+	--width: 500px;
+	--height: 70%;
+	min-height: 400px;
+}
+
+.web ion-modal.modal-classic .modal-classic-wrapper,
+.web ion-modal.modal-classic .modal-classic-content {
+	height: 100%;
+}
+
+.web ion-modal.modal-classic .modal-classic-content {
+	display: flex;
+	flex-direction: column;
+	overflow: visible;
+}
+
+.web ion-modal.modal-classic .item-details-image {
+	position: absolute;
+	left: -12px;
+	width: 130px;
+	padding-top: 240px;
+	height: auto;
+	background-size: 100% auto;
+}
+
+.web ion-modal.modal-classic .item-details-content {
+	padding-right: 8px;
+	height: calc(100% - 70px);
+	overflow-y: auto;
+}
+
+.web ion-modal.modal-classic .item-details-content.item-details-content-with-image {
+	padding-left: 130px;
+}
+
+.web ion-modal.modal-classic .item-details-card {
+	height: 100%;
+	position: relative;
+}
+
+.web ion-modal.modal-classic .item-details-card-price {
+	text-align: left;
+}
+
+.web ion-modal.modal-classic .item-details-actions {
+	position: absolute;
+	left: -25px; bottom: -17px; right: -25px;
+	margin-left: 0;
+	padding: 25px;
+	z-index: 5;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.web ion-modal.modal-classic .item-details-card-content {
+	padding: 0;
+}
+
+.web ion-modal.modal-classic.allergen-modal,
+.web ion-modal.modal-classic.apply-points-modal {
+	--width: var(--okx-sidebar-width);
+	--height: 100%;
+	--border-radius: 0;
+	justify-content: flex-end;
+}
+
+.web ion-modal.modal-classic.allergen-modal .modal-classic-wrapper,
+.web ion-modal.modal-classic.apply-points-modal .modal-classic-wrapper {
+	left: calc(100% - var(--okx-sidebar-width));
+}
+
+.web ion-modal.modal-classic.allergen-modal .absolute-content,
+.web ion-modal.modal-classic.apply-points-modal .absolute-content {
+	padding-top: 54px;
+}
+
+/* .web ion-modal.modal-classic.allergen-modal .rhino {
+	background: transparent url(../../assets/images/rhino.svg) no-repeat 50% 100% / 180px auto;
+} */
+
+.web ion-modal.modal-classic.allergen-modal .title.centered {
+	text-align: left;
+}
+
+.web ion-modal.modal-classic.allergen-modal .sectiontitle {
+	margin: 0;
+	font-weight: bold;
+}
+
+.web ion-modal.modal-classic.apply-points-modal .incrementer-decrease, .web ion-modal.modal-classic.apply-points-modal .incrementer-incease {
+	--color: var(--ion-color-dark);
+}
+
+.web .order-sublist-holder {
+	margin-bottom: 30px;
+	grid-column: 1 / -1;
+}
+
+.web .order-sublist-holder:last-of-type {
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1280px) {
+	.web .order-list-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.web .order-list-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.web .order-list-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}

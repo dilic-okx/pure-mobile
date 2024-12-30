@@ -1,0 +1,131 @@
+.history-content {
+		text-align: center;
+		padding: 20px;
+		height: 100%;
+		overflow-y: auto;
+}
+
+.history-item {
+		border-bottom: 1px solid var(--ion-separator-color);
+		/*text-transform: uppercase;*/
+}
+
+.history-content.order-tab  .history-item {
+	cursor: pointer;
+}
+
+.history-item h2 {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 13px;
+		font-weight: bold;
+}
+
+.history-item ion-col:first-child {
+		text-align: left;
+}
+
+.history-item ion-col p:first-child {
+		color: var(--ion-color-gray);
+		font-size: 8px;
+		margin-bottom: 8px;
+		font-weight: bold;
+}
+
+.history-item ion-col p:last-child {
+		color: var(--ion-color-medium);
+		font-size: 9px;
+		margin-top: 2px;
+		margin-bottom: 10px;
+}
+
+.history-item ion-col:last-child p {
+		text-align: right;
+		font-size: 14px;
+		margin-top: 25px;
+		font-weight: 500;
+		color: var(--ion-color-dark);
+		margin: 0;
+}
+
+.history-item ion-col:last-child p::before {
+	content: '▲';
+	position: relative;
+	left: -20px;
+	color: var(--ion-color-success);
+	opacity: 0.4;
+	font-size: 18px;
+	display: inline-block;
+	transform: scaleY(.7);
+}
+
+.history-item ion-col:last-child p.redeem::before {
+	content: '▼';
+	color: var(--ion-color-primary);
+	opacity: 1;
+}
+
+.order-button-wrapper {
+	float: right;
+}
+
+.order-button-col-width {
+	max-width: 100px;
+}
+
+.order-button-wrapper .order-button {
+	padding: 2px 4px;
+	display: inline-flex;
+	justify-content: center;
+	font-size: 10px;
+	font-weight: bold;
+	border-color: var(--ion-color-black);
+}
+
+.order-button-wrapper .order-button ion-icon {
+	font-size: 10px;
+	margin-left: 8px;
+}
+
+.web ion-content.route-history {
+	--background: transparent none;
+	--ion-color-white: transparent;
+	background-color: #fff;
+	background-image: url(../../assets/images/page-03.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: 100% auto;
+}
+
+.web #main > ion-content.route-history > .no-padding {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/* top: 100px;
+	bottom: 100px;
+	width: 400px;
+	margin-left: -200px; */
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+	/* min-height: 450px; */
+	width: var(--okx-bsmodal-width-lg);
+	height: 75%;
+}
+
+.web .route-history .tabs {
+	position: relative;
+	height: calc(100% - 60px);
+	border-radius: inherit;
+}
+
+.web .order-button-wrapper .order-button {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 1441px) {
+	.web #main > ion-content.route-history > .no-padding {
+		height: 65%;
+	}
+}

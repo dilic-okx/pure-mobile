@@ -1,0 +1,4 @@
+.web ion-content.route-delivery-time {
+	--ion-color-base: transparent;
+	--background: transparent url(../../assets/images/page-05.jpg) repeat-y 0 0 / 100% auto;
+}

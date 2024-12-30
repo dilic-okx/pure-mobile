@@ -1,0 +1,40 @@
+.web .static.route-reset-password {
+	background-image: url(../../assets/images/refer-a-friend.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: 100% auto;
+}
+.web ion-content.route-reset-password {
+	background-image: url(../../assets/images/refer-a-friend.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0px;
+	background-size: 100% auto;
+}
+
+.web #main > ion-content.route-reset-password > .ion-padding {
+	position: relative;
+	/* width: 50%;
+	max-width: 400px;
+	min-width: 280px;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto; */
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+	padding: 48px 64px 5px;
+	height: 55%;
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+
+.web .route-reset-password .ion-padding .absolute-content {
+	padding: 48px 64px 40px;
+}
+
+
+@media screen and (min-width: 1441px) {
+	.web #main > ion-content.route-reset-password > .ion-padding {
+		height: 45%;
+	}
+}

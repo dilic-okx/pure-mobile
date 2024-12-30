@@ -1,0 +1,11 @@
+#main > ion-content {
+	z-index: 5;
+}
+
+ion-content.ion-color-transparent {
+	--background: transparent;
+}
+
+.ion-page {
+    min-width: 285px;
+}

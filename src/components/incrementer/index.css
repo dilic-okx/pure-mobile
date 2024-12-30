@@ -1,0 +1,35 @@
+.incrementer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.incrementer-decrease, .incrementer-incease {
+	flex: 0 0 var(--okx-incrementer-button-width);
+	height: var(--okx-incrementer-button-width);
+	--padding-start: 0;
+	--padding-end: 0;
+	--border-width: 1px;
+	--border-style: solid;
+	--border-color: var(--ion-color-light);
+	--background: #fff;
+	--background-hover: var(--ion-color-light);
+	--color: var(--ion-color-primary);
+}
+
+.incrementer-quantity {
+	flex: 1 1 auto;
+	padding-left: var(--okx-incrementer-button-width);
+	padding-right: var(--okx-incrementer-button-width);
+}
+
+.incrementer-quantity-solo {
+	flex: 1 1 auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+.incrementer-note {
+	font-size: var(--okx-small-text-font-size);
+	color: var(--ion-color-gray);
+}

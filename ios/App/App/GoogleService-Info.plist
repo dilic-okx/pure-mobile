@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>45713251575-3moefu5e7ihh8k818oo42u55bld2s63j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.45713251575-3moefu5e7ihh8k818oo42u55bld2s63j</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAHeykbCmeEZaUmY_zgElG-6_q6RL42lOg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>45713251575</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.fiveloyalty.pureuk</string>
+	<key>PROJECT_ID</key>
+	<string>pure-uk</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pure-uk.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:45713251575:ios:7431c3aef8efb6bb8bc7f2</string>
+	<key>DATABASE_URL</key>
+	<string>https://pure-uk.firebaseio.com</string>
+</dict>
+</plist>

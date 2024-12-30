@@ -1,0 +1,121 @@
+.validate-content {
+    margin-top: 50px;
+}
+
+ion-item.contact-number ion-input{
+	--padding-bottom: 7px;
+	font-size: 14px;
+}
+
+.click-collect-content {
+	margin-top: -22px;
+}
+
+.web .route-order-summary {
+	--background: transparent none;
+	--ion-color-white: transparent;
+}
+
+.web #main > ion-content.route-order-summary > .ion-padding {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/* top: 30px;
+	bottom: 50px; */
+	width: var(--okx-bsmodal-width-lg);
+	margin-left: 0;
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+	height: 85%;
+}
+
+.web .route-order-summary .ion-padding .absolute-content {
+	padding: 32px;
+	margin-top: 0;
+}
+
+.web .route-order-summary .ion-padding .absolute-content .scrollable-y ion-grid.order-content-wrapper,
+.web .route-order-summary .ion-padding .absolute-content .scrollable-y .validate-content/*,
+.web .route-order-summary .ion-padding .absolute-content .flex-min*/ {
+	padding: 0 32px;
+}
+
+.web .route-order-summary .checkout {
+	margin-bottom: 20px;
+}
+
+.web .route-order-summary .ion-padding ion-button:last-child {
+	margin-bottom: 0;
+}
+
+.web .route-order-summary .ion-padding ion-button.add-items-btn,
+.web .route-order-summary .ion-padding ion-button.redeem-points-btn {
+	margin: 10px 0!important;
+}
+
+.web .route-order-summary .ion-padding ion-button.redeem-points-btn.disabled,
+.web .route-order .no-padding ion-button.redeem-points-btn.disabled {
+	--ion-color-dark: gray;
+}
+
+.allergen-modal > .modal-wrapper > .ion-page {
+	min-width: 100%;
+	overflow: auto;
+}
+
+
+.web ion-modal.modal-classic.allergen-modal .modal-classic-closer {
+	font-size: 20px;
+	padding: 11px;
+}
+
+.contact-number-label {
+	padding-top: 3px;
+}
+
+.contact-number-btns {
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	height: 38px;
+	width: 38px;
+}
+
+.contact-number-btns ion-button {
+	height: 100%;
+	width: 100%;
+	--border-radius: 50%;
+}
+
+.contact-number-icon {
+	position: absolute;
+	right: 0;
+	bottom: 2px;
+	font-size: 15px;
+	cursor: pointer;
+	border-radius: 50%;
+	padding: 7px;
+	transition: .2s ease-in-out;
+}
+
+.web .contact-number-icon {
+	bottom: 4px;
+}
+
+.web .contact-number-icon:hover {
+	background: rgba(0,0,0,0.13);
+}
+
+ion-button.checkout-btn.greyed {
+	/* --background: var(--ion-color-gray-tint); */
+	/* --background: var(--ion-color-secondary); */
+	color: var(--ion-color-gray-tint);
+}
+
+@media screen and (min-width: 1441px) {
+	.web #main > ion-content.route-order-summary > .ion-padding {
+		height: 75%;
+	}
+}

@@ -1,0 +1,116 @@
+ion-segment-button {
+	text-transform: none;
+	letter-spacing: initial;
+}
+
+/* second tab */
+
+.signature {
+	font-size: 32px;
+}
+
+.qr-holder {
+	padding: 24px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0 auto 20px;
+}
+
+.loyalty-content.scan {
+	padding-bottom: 60px;
+}
+
+.loyalty-content.scan h2 {
+	margin-top: 20px;
+	margin-left: 24px;
+}
+
+.noQrCode {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+/* end second tab */
+
+.points-tab {
+	background: transparent url(../../assets/images/loyalty-01.png) no-repeat 50% 100%;
+	background-size: 100% auto;
+	z-index: 1;
+}
+/*
+.points-tab::after {
+	position: absolute;
+	left: 0; top: 0; right: 0; bottom: 0;
+	display: block;
+	content: '';
+	background-image: linear-gradient(#fff 70%, rgba(255,255,255,0) 180%);
+}
+*/
+.verified-content {
+	width: 190px;
+	margin: 0 auto;
+}
+
+.route-loyalty ion-slide.slide-2 ion-content {
+	--background: #c1dfc4;
+}
+
+.web #main > ion-content.route-loyalty > .no-padding {
+	position: fixed;
+	/* left: 50%;
+	top: 100px;
+	bottom: 100px;
+	width: 400px;
+	margin-left: -200px; */
+	width: var(--okx-bsmodal-width-lg);
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+	min-height: 500px;
+	max-height: 75%;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -45%);
+}
+
+.web .route-loyalty .tabs ion-slides .absolute-content.points-tab .scrollable-y {
+	height: 100%;
+}
+
+.web .route-loyalty .tabs {
+	/* position: relative; */
+	height: 100%;
+	border-radius: inherit;
+}
+
+.web .route-loyalty .tabs ion-slides, ion-slide {
+	height: calc(100vh - 350px);
+	min-height: 350px;
+}
+
+.web ion-content.route-loyalty {
+	--background: transparent none;
+	--ion-color-white: transparent;
+}
+
+.web ion-segment-button.segment-button-checked {
+	border-bottom-color: var(--ion-color-primary);
+}
+
+.web .points-tab {
+	background: transparent none;
+}
+
+@media screen and (min-width: 1441px) {
+	.web #main > ion-content.route-loyalty > .no-padding {
+		max-height: 60%;
+	}
+}
+
+@media screen and (max-height: 600px) {
+	.web #main > ion-content.route-loyalty > .no-padding {
+		min-height: calc(100% - 50px);
+		box-shadow: none;
+	}	
+}

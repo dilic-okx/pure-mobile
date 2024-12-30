@@ -1,0 +1,60 @@
+.icomoon {
+	font-family: var(--ion-icomoon-font-family);
+	font-size: 24px;
+}
+
+span > .icomoon {
+	font-size: 20px;
+}
+
+.icomoon::before {
+	display: block;
+}
+
+.icomoon.ico-voucher::before {
+	content: '\e900';
+}
+
+.icomoon.ico-profile::before {
+	content: '\e901';
+}
+
+.icomoon.ico-basket::before {
+	content: '\e902';
+}
+
+.icomoon.ico-map::before {
+	content: '\e903';
+}
+
+.icomoon.ico-home::before {
+	content: '\e904';
+}
+
+.icomoon.ico-order::before {
+	content: '\e905';
+}
+
+.icomoon.ico-social::before {
+	content: '\e906';
+}
+
+.icomoon.ico-orders::before {
+	content: '\e907';
+}
+
+.icomoon.ico-allergens::before {
+	content: '\e908';
+}
+
+.icomoon.ico-logout::before {
+	content: '\e909'
+}
+
+.icomoon.ico-feedback::before {
+	content: '\e90a';
+}
+
+.icomoon.ico-radio::before {
+	content: '\e90b';
+}

@@ -1,0 +1,78 @@
+.validate-modal > .modal-wrapper {
+	max-height: 72vh;
+	width: 80vw;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.validate-modal > .modal-wrapper > .ion-page {
+	min-width: 100%;
+	padding: 24px 32px 16px;
+	overflow: auto;
+}
+
+.validate-modal .top-medium {
+	padding-bottom: 16px;
+}
+
+.validate-modal > .modal-wrapper > .ion-page h2 {
+	font-size: 20px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.validate-modal > .modal-wrapper > .ion-page ion-icon {
+	position: absolute;
+	right: 0;
+	font-size: 15px;
+}
+
+.validate-modal ion-item {
+	--min-height: 20px;
+	--inner-padding-end: 0;
+}
+
+.modal-content {
+	margin-top: 20px;
+}
+
+.validate-modal-closer {
+	display: none;
+}
+
+.web .validate-modal > .modal-wrapper .ion-page {
+	padding-top: 60px;
+}
+
+.web .validate-modal > .modal-wrapper {
+	max-width: var(--okx-bsmodal-width-md);
+	width: 100%;
+}
+
+.web .validate-modal > .modal-wrapper .validate-modal-closer {
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+}
+
+.web .validate-modal > .modal-wrapper .validate-modal-closer ion-icon {
+	font-size: 20px;
+}
+
+.web .validate-modal > .modal-wrapper .validate-modal-header > br {
+	display: none;
+}
+
+.web .validate-modal > .modal-wrapper .validate-modal-header {
+	text-align: left;
+}
+
+.web .validate-modal > .modal-wrapper .validate-modal-header ion-text .title {
+	font-weight: bold;
+}
+
+.web .validate-modal > .modal-wrapper .validate-modal-header ion-text .small-text {
+	color: var(--ion-color-gray);
+}

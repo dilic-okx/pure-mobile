@@ -1,0 +1,65 @@
+.mbsc-mobiscroll .mbsc-fr-hdr, .mbsc-mobiscroll .mbsc-fr-btn {
+	color: var(--ion-color-primary);
+}
+
+.mbsc-mobiscroll .mbsc-cal-days > div {
+	color: var(--ion-color-primary);
+	border-color: var(--ion-color-primary);
+}
+
+.mbsc-mobiscroll.mbsc-no-touch:not(.mbsc-ev-cal) .mbsc-cal-cell:not(.mbsc-disabled):hover .mbsc-cal-cell-txt, .mbsc-mobiscroll.mbsc-no-touch .mbsc-cal-day:not(.mbsc-disabled) .mbsc-cal-day-date:hover, .mbsc-mobiscroll .mbsc-cal-cell:focus .mbsc-cal-cell-txt {
+	background: var(--ion-color-primary-tint);
+}
+
+.mbsc-mobiscroll .mbsc-fr-btn.mbsc-active, .mbsc-mobiscroll.mbsc-no-touch .mbsc-fr-btn-e:not(.mbsc-disabled):hover {
+	background: var(--ion-color-primary-tint);
+}
+
+.mbsc-mobiscroll .mbsc-cal-c .mbsc-cal .mbsc-cal-body .mbsc-cal-row .mbsc-selected .mbsc-cal-cell-txt {
+	background: var(--ion-color-primary);
+}
+
+.date-picker-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.date-picker-label {
+	font-size: 10px;
+	font-weight: 700;
+	color: var(--ion-item-color);
+	margin-left: 2px;
+	transition: .1s ease-in;
+}
+
+.date-picker-label--red {
+	color: var(--ion-color-primary);
+}
+
+.data-picker-input {
+	border: 0;
+	outline: 0;
+	color: var(--ion-color-dark);
+	padding: 10px 8px 10px 0;
+}
+
+
+.mbsc-material .mbsc-cal-c .mbsc-cal .mbsc-cal-body .mbsc-cal-row .mbsc-selected .mbsc-cal-cell-txt {
+	/* background: var(--ion-color-primary); */
+	background: rgba(255, 26, 75, .9);
+	color: #fff;
+}
+
+.mbsc-material .mbsc-fr-btn {
+	color: var(--ion-color-primary);
+}
+
+.mbsc-ios .mbsc-cal-c .mbsc-cal .mbsc-cal-body .mbsc-cal-row .mbsc-selected .mbsc-cal-cell-txt {
+	background: var(--ion-color-primary);
+	border-color: var(--ion-color-primary);
+}
+
+.mbsc-mobiscroll .mbsc-sc-whl-l {
+	display: none;
+}

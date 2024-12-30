@@ -1,0 +1,91 @@
+.payment-card-input {
+  border: 0;
+  outline: none;
+  flex: 1;
+  padding-left: 0;
+  font-family: sans-serif;
+}
+
+.scrollable-y.add-card-scroll {
+	overflow: unset;
+	overflow-y: unset;
+}
+
+.web-stripe-input {
+  min-height: 48px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-bottom: 1px solid var(--ion-item-border-color,var(--ion-border-color,var(--ion-color-step-150,rgba(0,0,0,0.13))));
+}
+
+.web-stripe-input > .__PrivateStripeElement {
+  width: 100%;
+}
+
+ion-list .card-list ion-item {
+  padding-left: 7px;
+}
+
+.web-stripe-input-active {
+  border-bottom: 2px solid var(--ion-color-primary);
+}
+
+.card-add-wrapper .data-picker-input {
+  border-bottom: 1px solid;
+  border-color: var(--ion-item-border-color,var(--ion-border-color,var(--ion-color-step-150,rgba(0,0,0,0.13))));
+}
+
+.web .scrollable-y.add-card-scroll {
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.web ion-content.route-card-add {
+	--background: transparent none;
+	--ion-color-white: transparent;
+}
+
+.web .static.route-card-add {
+	background-image: url(../../assets/images/page-02.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0px;
+	background-size: 100% auto;
+}
+
+.web ion-content.route-card-add {
+	background-color: #fff;
+	background-image: url(../../assets/images/page-02.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0px;
+	background-size: 100% auto;
+}
+
+.web .route-card-add .ion-padding {
+	position: absolute;
+	left: 50%;
+	top: 30px;
+	bottom: 50px;
+	width: 400px;
+	margin-left: -200px;
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+}
+
+.web .route-card-add .ion-padding .absolute-content {
+	padding: 32px;
+}
+
+.web .route-card-add .ion-padding .absolute-content .scrollable-y/*,
+.web .route-card-add .ion-padding .absolute-content .flex-min*/ {
+	padding: 0 32px;
+}
+
+.web .route-card-add .ion-padding ion-button:first-child {
+	display: none;
+}
+
+.web .route-card-add .ion-padding ion-button:last-child {
+	margin-bottom: 0;
+}

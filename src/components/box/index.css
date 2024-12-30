@@ -1,0 +1,26 @@
+.okx-box {
+	border: 1px solid var(--okx-border-color);
+	border-radius: var(--okx-box-radius);
+	padding-left: var(--okx-box-padding-left);
+	padding-top: var(--okx-box-padding-top);
+	padding-right: var(--okx-box-padding-right);
+	padding-bottom: var(--okx-box-padding-bottom);
+}
+
+.okx-box-header {
+	margin-left: calc(0px - var(--okx-box-padding-left));
+	margin-top: calc(0px - var(--okx-box-padding-top));
+	margin-right: calc(0px - var(--okx-box-padding-right));
+	padding-left: var(--okx-box-padding-left);
+	padding-right: var(--okx-box-padding-right);
+	border-bottom: 1px solid var(--okx-border-color);
+}
+
+.okx-box-footer {
+	margin-left: calc(0px - var(--okx-box-padding-left));
+	margin-bottom: calc(0px - var(--okx-box-padding-bottom));
+	margin-right: calc(0px - var(--okx-box-padding-right));
+	padding-left: var(--okx-box-padding-left);
+	padding-right: var(--okx-box-padding-right);
+	border-top: 1px solid var(--okx-border-color);
+}

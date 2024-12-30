@@ -1,0 +1,133 @@
+ion-content.route-history-details > .ion-padding > .absolute-content {
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+ion-content.route-history-details > .ion-padding > .absolute-content > .scrollable-y {
+	height: 100%;
+	padding-left: var(--ion-padding, 16px);
+	padding-right: var(--ion-padding, 16px);
+	padding-bottom: var(--ion-padding, 16px);
+}
+
+.history-details {
+	background: transparent url(../../assets/images/page-04.jpg)  no-repeat 50% 100%;
+	background-size: 100% auto;
+	z-index: 1;
+}
+
+.history-details::after {
+	position: absolute;
+	left: 0; top: 0; right: 0; bottom: 0;
+	display: block;
+	content: '';
+	background-image: linear-gradient(#fff 57%, rgba(255,255,255,0) 105%);
+}
+
+.history-details ion-grid {
+	padding-inline-start: 0;
+	padding-inline-end: 0;
+}
+
+.history-details ion-row {
+	border-bottom: 1px solid var(--okx-border-color);
+	color: var(--ion-color-dark);
+	font-weight: bold;
+}
+
+.history-details ion-row:last-child {
+	border-bottom: 0 none;
+}
+
+.history-details .no-border {
+	border-bottom: 0 none;
+}
+
+.history-details .okx-box-footer {
+	border-top: 2px solid var(--okx-border-color);
+	padding-left: 0;
+	margin-left: 0;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.history-details .okx-box-footer ion-row {
+	border-bottom: 0 none;
+}
+
+.history-details .okx-box,
+.history-details .okx-box-header {
+	border-color: var(--ion-color-secondary);
+	border-width: 2px;
+}
+
+.web #main > ion-content.route-history-details {
+	--background: transparent none;
+	--ion-color-white: transparent;
+	background-color: #fff;
+	background-image: url(../../assets/images/page-03.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	background-size: 100% auto;
+}
+
+.web #main > ion-content.route-history-details > .ion-padding {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* bottom: 50px; */
+	width: var(--okx-bsmodal-width-lg);
+	transform: translate(-50%, -50%);
+	margin-left: 0;
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+	padding: 64px;
+	min-height: 75%;
+}
+
+.web #main > ion-content.route-history-details > .ion-padding > .absolute-content.history-details {
+	background: none;
+}
+
+.web #main > ion-content.route-history-details > .ion-padding > .absolute-content.history-details:after {
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+}
+
+.web #main > ion-content.route-history-details > .ion-padding > .absolute-content.history-details > div.scrollable-y {
+	height: 100%;
+}
+
+.web .history-details .okx-box,
+.web .history-details .okx-box-header {
+	border-color: var(--okx-border-color);
+	border-width: 1px;
+}
+
+.web .history-details .okx-box-header p.light-text br {
+	display: none;
+}
+
+.web .history-details .okx-box-header p.light-text {
+	color: var(--ion-color-dark);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 7px 0;
+}
+
+.web .history-details .okx-box-header p.light-text ion-text:nth-of-type(odd) strong {
+	font-weight: normal;
+}
+
+.web .history-details .okx-box-header p.light-text ion-text:nth-of-type(even) {
+	text-align: right;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 1441px) {
+    .web #main > ion-content.route-history-details > .ion-padding {
+        min-height: 65%;
+    }
+}

@@ -1,0 +1,54 @@
+.pick-up-point-check-bg {
+	--background: transparent none;
+	--ion-color-white: transparent;
+	background-color: #fff;
+	background-image: url(../../assets/images/page-01.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 24px;
+	background-size: 100% auto;
+}
+
+.code-checking-box {
+	min-height: 80px;
+}
+
+.route-pick-up-point-check .restaurant-card {
+	position: absolute;
+	top: 0;
+	border-radius: 0;
+}
+
+.route-pick-up-point-check .restaurant-card > ion-card-content {
+	height: 100%;
+}
+
+#main>ion-content.route-pick-up-point-check {
+	z-index: 10;
+}
+
+.web #main>ion-content.route-pick-up-point-check {
+	z-index: 5;
+}
+
+.pup-modal-inner-wrapper {
+	height: 100%;
+}
+
+.pup-modal-info-holder {
+	height: var(--okx-pup-map-wrapper-top);
+	overflow-y: auto;
+	text-align: center;
+}
+
+/* ion-modal.modal-classic.pup-modal.check-modal .modal-classic-content {
+	flex: 0 1 44vh;
+} */
+
+.web .route-pick-up-point-check .delivery-option-label {
+	display: none;
+}
+
+.web .pick-up-point-check-bg {
+	background-position: 100% 0;
+	background-repeat: repeat-y;
+}

@@ -1,0 +1,45 @@
+.order-content-wrapper ion-row {
+	color: var(--ion-color-dark);
+	/* font-weight: bold; */
+}
+
+.order-content-wrapper .basket-item-wrapper {
+	border-bottom: 1px solid var(--okx-border-color);
+}
+
+.order-content-wrapper .basket-item-wrapper:last-of-type {
+	border-bottom-width: 1px;
+}
+
+/* .web .order-summary-sidebar .order-content-wrapper .basket-item-wrapper:last-of-type {
+	border-bottom-width: 0px;
+} */
+
+.web .order-summary-sidebar .order-content-wrapper .subtotal-bordered-bottom {
+	border-bottom: 2px solid var(--okx-border-color);
+}
+
+.total-bordered-bottom {
+	border-bottom: 2px solid var(--okx-border-color);
+}
+
+.total-bordered-top {
+	border-top: 2px solid var(--okx-border-color);
+}
+
+.subtotal-bordered-bottom {
+	border-bottom: 2px solid var(--okx-border-color);
+}
+
+ion-col.grow {
+	flex-grow: 3.5;
+}
+
+.add-items-btn {
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+/* .web .add-items-btn {
+	display: none;
+} */

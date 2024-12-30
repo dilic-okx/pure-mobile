@@ -1,0 +1,56 @@
+ion-modal.modal-classic.pup-modal {
+	--width: 80%;
+	--height: 80%;
+}
+
+.pup-map-wrapper {
+	position: absolute;
+	left: 0;
+	top: 58%;
+	right: 0;
+	bottom: 0;
+	margin: 20px 0  0;
+	min-width: 200px;
+}
+
+.pup-map-wrapper::after {
+	content: '';
+	display: block;
+	/*padding-top: 100%;*/
+}
+
+/* ion-modal.modal-classic.pup-modal .modal-classic-content, */
+.web ion-modal.modal-classic.pup-modal .modal-classic-content {
+	flex: 0 1 50%;
+	overflow-y: auto;
+}
+
+.web ion-modal.modal-classic.pup-modal .modal-classic-content {
+	margin-top: 10px;
+}
+
+.web ion-content.route-pick-up-point {
+	--ion-color-base: transparent;
+	--background: transparent url(../../assets/images/page-05.jpg) repeat-y 0 0 / 100% auto;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+	ion-modal.modal-classic.pup-modal {
+		--width: 80vw;
+		--height: 80vh;
+	}
+}
+
+@media screen and (max-height: 724px) {
+	ion-modal.modal-classic.pup-modal .modal-classic-content {
+		flex: 0 1 50%;
+		overflow-y: auto;
+	}
+}
+
+@media screen and (min-height: 723px) {
+	.web ion-modal.modal-classic.pup-modal .modal-classic-content {
+		flex: 0 1 55%;
+		overflow-y: auto;
+	}
+}

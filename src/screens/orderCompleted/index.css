@@ -1,0 +1,137 @@
+ion-content.route-order-completed > .ion-padding > .absolute-content {
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+ion-content.route-order-completed > .ion-padding > .absolute-content > .scrollable-y {
+	height: 100%;
+	padding-left: var(--ion-padding, 16px);
+	padding-right: var(--ion-padding, 16px);
+	padding-bottom: var(--ion-padding, 16px);
+}
+
+
+.order-status {
+	display: inline-block;
+	padding: 2px 4px;
+	border: 1px solid var(--ion-color-black);
+	color: var(--ion-color-black);
+	font-size: 9px;
+	text-transform: uppercase;
+}
+
+.route-order-completed .okx-box, .route-order-completed .okx-box-header {
+	border-color: var(--ion-color-secondary);
+	border-width: 2px;
+}
+
+.order-details {
+	background: transparent url(../../assets/images/page-04.jpg) no-repeat 100% 100%;
+	background-size: 100% auto;
+	z-index: 1;
+	overflow-y: auto;
+}
+
+ion-content.route-order-completed::after {
+	position: absolute;
+	left: 0; top: 0; right: 0; bottom: 0;
+	display: block;
+	content: '';
+	background-image: linear-gradient(#fff 65%, rgba(255,255,255,0) 105%);
+
+}
+
+.order-details ion-grid {
+	padding-inline-start: 0;
+	padding-inline-end: 0;
+}
+
+.order-details .okx-box-footer {
+	border-top: 2px solid var(--okx-border-color);
+	padding-left: 0;
+	margin-left: 0;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.order-details .okx-box-footer ion-row {
+	border-bottom: 0 none;
+}
+
+.order-details .okx-box-header-grid ion-row:not(:last-child) ion-col {
+	padding: 5px 5px 0 5px;
+}
+
+.web #main > ion-content.route-order-completed {
+	--background: transparent none;
+	--ion-color-white: transparent;
+	background-color: #fff;
+	background-image: url(../../assets/images/page-03.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	background-size: 100% auto;
+}
+
+.web #main > ion-content.route-order-completed::after {
+	display: none;
+}
+
+.web #main > ion-content.route-order-completed > .ion-padding {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* bottom: 50px; */
+	width: var(--okx-bsmodal-width-lg);
+	transform: translate(-50%, -50%);
+	margin-left: 0;
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+	padding: 64px;
+	min-height: 75%;
+}
+
+.web #main > ion-content.route-order-completed > .ion-padding > .absolute-content.order-details {
+	background: none;
+	overflow-y: auto;
+}
+
+.web #main > ion-content.route-order-completed > .ion-padding > .absolute-content.order-details:after {
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+}
+
+.web #main > ion-content.route-order-completed > .ion-padding > .absolute-content.order-details > div.scrollable-y {
+	height: 100%;
+}
+
+.web .order-details .okx-box,
+.web .order-details .okx-box-header {
+	border-color: var(--okx-border-color);
+	border-width: 1px;
+}
+
+
+.web .order-details .okx-box-header-grid ion-row:not(:last-child) ion-col {
+	padding: 7px 5px 0 5px;
+}
+
+.web .order-details .okx-box-header-grid ion-row:last-of-type ion-col {
+	padding-bottom: 7px;
+}
+
+.web .order-details .okx-box-header-grid ion-row ion-col:nth-of-type(odd) strong{
+	font-weight: normal;
+}
+
+.web .order-details .okx-box-header-grid ion-row ion-col:nth-of-type(even) {
+	text-align: right;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 1441px) {
+    .web #main > ion-content.route-history-details > .ion-padding {
+        min-height: 65%;
+    }
+}

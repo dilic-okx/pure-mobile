@@ -1,0 +1,65 @@
+ion-modal.modal-classic {
+	--width: 70%;
+	--height: 50%;
+	--border-radius: 10px;
+}
+
+ion-modal.modal-classic .modal-classic-wrapper {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 13px;
+}
+
+ion-modal.modal-classic .modal-classic-content {
+	flex: 1 1 auto;
+	overflow-y: auto;
+	padding: 12px;
+}
+
+ion-modal.modal-classic .modal-classic-closer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+ion-modal.modal-classic .modal-classic-header,
+ion-modal.modal-classic .modal-classic-action {
+	flex: 0 1 auto;
+}
+
+ion-modal.modal-classic .modal-classic-header {
+	padding: 10px 5px;
+}
+
+ion-modal.modal-classic .modal-classic-header h3 {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+}
+
+ion-modal.modal-classic.modal-with-color-header .modal-classic-header h3 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-right: 20px;
+}
+
+ion-modal.modal-classic.modal-with-color-header .modal-classic-wrapper::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 42px;
+	background-color: var(--ion-color-primary);
+	z-index: -1;
+}
+
+ion-modal.modal-classic.modal-with-color-header .modal-classic-closer {
+	padding: 11px;
+	font-size: 20px;
+}

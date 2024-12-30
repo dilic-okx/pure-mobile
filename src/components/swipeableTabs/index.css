@@ -1,0 +1,83 @@
+.tabs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.tabs .segment-holder {
+  position: sticky;
+  position: -webkit-sticky;
+  flex: 0 0 auto;
+  top: 0;
+  z-index: 2;
+}
+
+/* .tabs ion-segment-button {
+  min-width: 70px;
+} */
+
+.tabs ion-segment-button {
+	--indicator-color: transparent;
+}
+
+.tabs ion-slides, ion-slide {
+  flex: 1 1 auto;
+  margin: 0;
+  height: calc(100vh - 163px);
+}
+
+.loyalty-bar > div {
+	flex: 1 1 auto;
+}
+
+.loyalty-bar > div:last-child {
+	text-align: center;
+}
+
+.loyalty-bar .loyalty-balance {
+	margin: 0 24px 0 0;
+}
+
+.loyalty-badge {
+	width: var(--okx-loyalty-badge-width);
+	padding-top: 140px;
+	margin: 30px auto 10px;
+	background: url(../../assets/images/loyalty-icon-02.svg) transparent no-repeat 50% 0% / 100% auto;
+	display: inline-block;
+}
+
+.loyalty-bar .loyalty-badge {
+	margin: 0 8px;
+	width: 24px;
+	padding-top: 100%;
+	background-position: 0 50%;
+}
+
+.loyalty-bar {
+	position: absolute;
+	width: 100vw;
+	height: var(--okx-loyalty-bar-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 0 0 auto;
+	background-color: var(--ion-color-secondary);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	font-weight: bold;
+}
+
+.web .loyalty-bar {
+	position: static;
+	width: auto;
+}

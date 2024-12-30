@@ -1,0 +1,13 @@
+.okx-password-wrapper {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.okx-password-wrapper .okx-password-holder {
+	flex: 1 1 auto;
+}
+
+.okx-password-wrapper ion-button {
+	flex: 0 0 auto;
+}

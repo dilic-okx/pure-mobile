@@ -1,0 +1,53 @@
+:root {
+	--okx-puller-height: 30px;
+}
+
+.okx-pullup {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*transition: all 100ms ease-out 0s;*/
+	transform: translate3d(0,0,0);
+}
+
+.okx-puller {
+	min-height: var(--okx-puller-height);
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	flex-direction: column;
+	padding-top: 18px;
+}
+
+.okx-pullup-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 35px;
+	bottom: 0;
+	overflow-y: auto;
+}
+
+.okx-pullup-content-top-75 {
+	top: 75px;
+}
+
+.okx-pullup-content-top-110 {
+	top: 110px;
+}
+
+.notch {
+	width: 40px;
+	height: 6px;
+	background: var(--ion-color-gray);
+	border-radius: 3px;
+	align-self: center;
+	position: absolute;
+	top: 12px;
+}
+
+
+.web .okx-puller {
+	display: none;
+}

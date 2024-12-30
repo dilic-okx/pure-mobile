@@ -1,0 +1,111 @@
+ion-grid.no-padding.social {
+	margin-right: -10px;
+}
+
+ion-grid.no-padding.social ion-col {
+	padding-top: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.square {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    background-color: var(--ion-color-tertiary);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.soc-icon {
+    display: flex;
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.soc-label {
+	display: block;
+    padding: 8px 0 0 0px;
+}
+
+.web .route-social.ion-color-white {
+	--background: transparent none;
+	--ion-color-base: transparent;
+}
+
+.web ion-content.route-social {
+	background-image: url(../../assets/images/page-02.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: 100% auto;
+}
+
+.web #main > ion-content.route-social > .ion-padding {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: 50px;
+    width: 450px;
+    transform: translate(-50%, -50%);
+	margin-left: 0;
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+    padding: 64px;
+    min-height: 70%;
+}
+
+.web .square {
+    cursor: pointer;
+}
+
+.web .route-social .ion-padding .heading-wrapper,
+.web .route-social .ion-padding .frm-wrapper,
+.web .route-social .ion-padding .action-wrapper  {
+	padding: 0 32px;
+}
+
+.web .route-social .ion-padding .frm-wrapper  {
+	position: absolute;
+	left: 32px;
+	right: 32px;
+	top: 135px;
+	bottom: 64px;
+	overflow-y: auto;
+	--ion-color-success: var(--ion-color-primary);
+}
+
+.web .soc-icon {
+    width: 45%;
+    height: 45%;
+    font-size: 45px;
+}
+
+.web .route-social .ion-padding ion-grid.social .small-text {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1441px) {
+    .web #main > ion-content.route-social > .ion-padding {
+        min-height: 55%;
+    }
+}

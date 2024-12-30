@@ -1,0 +1,38 @@
+
+
+.apply-points-spacer {
+	margin: 32px 0;
+	height: 170px;
+	background: transparent url(../../assets/images/loyalty-icon-02.svg) no-repeat 50% 0 / auto 100%;
+}
+
+.web .route-apply-points {
+	--background: transparent none;
+	--ion-color-white: transparent;
+}
+
+.web #main > ion-content.route-apply-points > .ion-padding {
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	bottom: 50px;
+	width: var(--okx-bsmodal-width-lg);
+	margin-left: -200px;
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+}
+
+.web .route-apply-points .ion-padding .absolute-content {
+	padding: 32px 32px 16px;
+}
+
+.web .route-apply-points .ion-padding .absolute-content .scrollable-y/*,
+.web .route-apply-points .ion-padding .absolute-content .flex-min*/ {
+	padding: 0 32px;
+}
+
+.web ion-modal.modal-classic.apply-points-modal .modal-classic-closer {
+	font-size: 20px;
+	padding: 11px;
+}

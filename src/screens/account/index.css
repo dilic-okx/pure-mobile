@@ -1,0 +1,121 @@
+.route-account .alttitle-01 {
+	line-height: 24px;
+}
+
+.input-avatar {
+	display: none;
+}
+
+.profile-image-content {
+	width: 96px;
+	height: 96px;
+	margin: auto;
+}
+
+.avatar-image-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px
+}
+
+.avatar-delete {
+	position: absolute;
+    top: 10%;
+    right: 115px;
+    transform: translate(0, -50%);
+}
+
+.avatar-photo {
+	position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translate(0, -50%);
+    background: rgba(0,0,0, 0.75);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	background-color: var(--ion-color-primary);
+}
+
+.avatar-circle {
+    border: 10px solid var(--okx-circle-color);
+	border-radius: 65px;
+	position: relative;
+}
+
+.line {
+	height: 1px;
+    background-color: var(--ion-color-tertiary);
+    margin: 20px 0;
+}
+
+.top {
+	margin-top: 25px;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+	/* iOS */
+	.avatar-delete {
+		position: absolute;
+		top: 10%;
+		right: 95px;
+		transform: translate(0, -50%);
+	}
+}
+
+.web ion-content.route-account {
+	--background: transparent none;
+	--ion-color-white: transparent;
+	background-color: #fff;
+	background-image: url(../../assets/images/page-02.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: 100% auto;
+	overflow: visible;
+}
+
+.web #main > ion-content.route-account > .ion-padding {
+	position: fixed;
+	left: 50%;
+	top: 50px;
+	bottom: 50px;
+	width: 450px;
+	transform: translate(-50%, 0%);
+	margin-left: 0;
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+}
+
+.web .route-account .ion-padding .frm-wrapper, .web .route-account .ion-padding .top-medium  {
+	position: absolute;
+}
+
+.web .route-account .ion-padding .frm-wrapper  {
+	left: 32px;
+	right: 32px;
+	top: 305px;
+	bottom: 130px;
+	overflow-y: auto;
+}
+
+.web .route-account .ion-padding .top-medium  {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0 32px 32px;
+}
+
+.web .route-account .ion-padding ion-button:last-child {
+	margin-bottom: 0;
+}
+
+.web .avatar-photo,
+.web .avatar-delete {
+	cursor: pointer;
+}

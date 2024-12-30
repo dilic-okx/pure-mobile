@@ -1,0 +1,47 @@
+.okx-validate-input-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.okx-validate-input-wrapper .okx-validate-input-holder {
+    flex: 1 1 auto;
+    padding-bottom: 5px;
+}
+
+.okx-validate-input-wrapper .okx-validate-input-holder ion-datetime {
+    --padding-start: 0;
+    --padding-top: 15px;
+}
+.okx-validate-input-wrapper .okx-validate-input-holder p {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 21px 0 0 0;
+    display: flex;
+    padding-left: 2px;
+    color: inherit;
+}
+
+.okx-validate-input-wrapper .okx-validate-input-holder ion-label {
+    font-size: 11px;
+}
+
+.okx-validate-input-wrapper ion-button {
+    flex: 1 0 auto;
+}
+
+.date-picker-wrapper.modal .data-picker-input {
+    padding-top: 15px;
+}
+
+.date-picker-wrapper.modal ion-label {
+    font-size: 8px;
+}
+
+.date-picker-modal-label {
+	font-size: 9px;
+    color: var(--ion-color-dark);
+    font-weight: bold;
+	margin-left: 2px;
+	transition: .1s ease-in;
+}

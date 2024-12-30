@@ -1,0 +1,80 @@
+ion-content div.dash-layout {
+	background-image: url(../../assets/images/dashboard-01.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.dash-card {
+	position: absolute;
+	left: 30px; right: 30px; bottom: 0;
+	z-index: 1;
+	--background: #fff;
+	border-radius: var(--ion-card-radius);
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	padding-bottom: 35%;
+	background-image: url(../../assets/images/dashboard-02.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 120%;
+	background-size: 60% auto;
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.dash-menu {
+	padding: 0 64px;
+}
+
+.dash-menu ion-item {
+	--color: var(--ion-color-dark);
+	--background: trasparent;
+	--background-hover: trasparent;
+	--min-height: 32px;
+}
+
+.dash-card ion-label {
+	font-weight: bold;
+}
+
+.dash-menu ion-label {
+	text-align: center;
+}
+
+.web .static.route-dashboard {
+	background: transparent none;
+}
+
+.web ion-content.route-dashboard div.dash-layout.absolute-content {
+	background: transparent none;
+}
+
+.web ion-content div.dash-layout::before {
+	background-image: none;
+}
+
+.web .dash-card {
+	top: var(--okx-bsmodal-top);
+	bottom: auto;
+	left: auto;
+	right: auto;
+	position: relative;
+	width: 50%;
+	max-width: var(--okx-bsmodal-width-md);
+	min-width: 280px;
+	padding-top: 24px;
+	padding-bottom: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--okx-box-radius);
+	background-position: 50% 108%;
+	background-size: 120px auto;
+}
+
+.web .dash-menu ion-item {
+	--color: var(--ion-color-white);
+	--background: var(--ion-color-black);
+	margin-bottom: 20px;
+	border-radius: var(--okx-small-radius);
+}

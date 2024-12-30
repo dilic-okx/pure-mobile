@@ -1,0 +1,147 @@
+@import url("./index.css");
+
+.web * { 
+	scrollbar-width: thin !important;
+	scrollbar-color: var(--okx-scrollbar-color);
+}
+
+.web ::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+.web ::-webkit-scrollbar-track {
+	background: var(--okx-scrollbar-track-color);
+	border-radius: 0;
+}
+
+.web ::-webkit-scrollbar-thumb {
+	background: var(--okx-scrollbar-handle-color);
+	border-radius: 0;
+}
+
+ion-app.ion-page.web {
+	background-image: url(../assets/images/page-01.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.web .web-only {
+	display: block;
+}
+
+.web .static ion-toolbar.primary-toolbar {
+	--background: transparent none;
+}
+
+.web .mbsc-select-input {
+	cursor: pointer;
+}
+
+.web .mbsc-select-input[disabled], .web .mbsc-sel-hdn[disabled] + .mbsc-select-input {
+	cursor: default;
+}
+
+.web #main > ion-content:not(.route-order):not(.route-dashboard):not(.route-delivery-options):not(.route-delivery-address-check):not(.route-locations):not(.route-refer-a-friend):not(.route-pick-up-point-check):not(.route-history):not(.route-loyalty) > .no-padding,
+.web #main > ion-content > .ion-padding {
+	position: fixed;
+	left: 50%;
+	top: var(--okx-bsmodal-top);
+	bottom: 80px;
+	width: var(--okx-bsmodal-width-lg);
+	min-height: 240px;
+	margin-left: calc(var(--okx-bsmodal-width-lg) / -2);
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+}
+
+.web .restaurant-card {
+	position: relative;
+	top: var(--okx-bsmodal-top);
+	bottom: auto;
+	left: auto;
+	right: auto;
+	width: var(--okx-bsmodal-width-lg);
+	padding: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--okx-box-radius);
+}
+
+.web #main > ion-content:not(.route-order) > .no-padding > .absolute-content > .flex-min:last-of-type > ion-button,
+.web #main > ion-content:not(.route-order) > .ion-padding > .absolute-content > .flex-min:last-of-type > ion-button,
+.web #main > ion-content:not(.route-order-summary) > .no-padding > .absolute-content > .flex-min:last-of-type > ion-button,
+.web #main > ion-content:not(.route-order-summary) > .ion-padding > .absolute-content > .flex-min:last-of-type > ion-button,
+.web .restaurant-card ion-card-content ion-button:last-of-type {
+	margin: 0;
+}
+
+/*
+.web #main > ion-header,
+.web #main > ion-content {
+	-webkit-animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	-ms-animation: fadein 1s;
+	-o-animation: fadein 1s;
+	animation: fadein 1s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+*/
+
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+	.web #main > ion-content:not(.route-order):not(.route-dashboard):not(.route-delivery-options):not(.route-delivery-address-check):not(.route-locations):not(.route-refer-a-friend):not(.route-pick-up-point-check):not(.route-history) > .no-padding,
+	.web #main > ion-content > .ion-padding {
+		width: var(--okx-bsmodal-width-md);
+		margin-left: calc(var(--okx-bsmodal-width-md) / -2);
+	}
+	.web .restaurant-card {
+		width: var(--okx-bsmodal-width-md);
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.web #main > ion-content:not(.route-order):not(.route-dashboard):not(.route-delivery-options):not(.route-delivery-address-check):not(.route-locations):not(.route-refer-a-friend):not(.route-pick-up-point-check):not(.route-history) > .no-padding,
+	.web #main > ion-content > .ion-padding {
+		width: var(--okx-bsmodal-width-sm);
+		margin-left: calc(var(--okx-bsmodal-width-sm) / -2);
+	}
+	.web .restaurant-card {
+		width: var(--okx-bsmodal-width-sm);
+	}
+}
+
+/* responsive end */
+
+/* big screen override */
+
+@media screen and (min-width: 992px) {
+	.web ion-header:not(.route-login) + ion-toolbar.dynamic-header,
+	.web ion-header:not(.route-login) + .content-spinner + ion-toolbar.dynamic-header {
+		top: 16px;
+		width: 100px;
+	}
+}

@@ -1,0 +1,22 @@
+.header-md::after {
+	background-image: none;
+}
+
+ion-toolbar.dynamic-header {
+	--min-height: var(--ion-toolbar-min-height);
+	--ion-toolbar-background: transparent;
+	--ion-toolbar-color: var(--ion-color-dark);
+	margin-top: -15px;
+}
+
+.web ion-toolbar.dynamic-header {
+	margin-top: 0;
+	position: absolute;
+	top: 80px;
+	z-index: 6;
+	pointer-events: none;
+}
+
+.web ion-toolbar.dynamic-header ion-buttons {
+	pointer-events: all;
+}

@@ -1,0 +1,59 @@
+.mbsc-comp.time-picker {
+  width: 100%;
+  color: var(--ion-color-dark);
+  padding: 10px 8px 10px 0;
+  border: 0;
+  border-bottom: 1px solid;
+  border-color: var(--ion-item-border-color,var(--ion-border-color,var(--ion-color-step-150,rgba(0,0,0,0.13))));
+  outline: none;
+}
+
+.mbsc-comp.time-picker::placeholder {
+  color: var(--ion-color-dark);
+  opacity: 0.33;
+}
+
+.mbsc-ios .mbsc-sc-itm-sel, .mbsc-ios .mbsc-sc-whl-gr-3d {
+  /* color: #000; */
+  color: var(--ion-color-primary,#3880ff);
+}
+
+.mbsc-material .mbsc-sc-lbl {
+  color: var(--ion-color-primary,#3880ff);
+}
+
+.mbsc-fr-btn1 .mbsc-fr-btn-e .mbsc-fr-btn {
+  color: var(--ion-color-primary,#3880ff);
+}
+
+/* .mbsc-sc-itm .mbsc-btn-e .mbsc-sc-itm-sel {
+  color: var(--ion-color-primary,#3880ff);
+} */
+
+.mbsc-material .mbsc-fr-btn-cont .mbsc-fr-btn {
+  color: var(--ion-color-primary,#3880ff);
+}
+
+.mbsc-fr-btn-cont {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.mbsc-sc-itm-sel {
+  color: var(--ion-color-primary,#3880ff);
+  font-weight: 600;
+}
+
+.time-picker-label {
+  font-size: 10px;
+  color: var(--ion-item-color);
+  margin-left: 2px;
+}
+
+.mbsc-mobiscroll .mbsc-sc-lbl {
+  color: var(--ion-color-primary,#3880ff); 
+}
+
+.mbsc-material .mbsc-sc-whl-l {
+  display: none;
+}

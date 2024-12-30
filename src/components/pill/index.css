@@ -1,0 +1,25 @@
+:root {
+	--clickup-initial-height: 50px;
+	--clickup-open-height: 50%;
+}
+
+.pill-group {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pill {
+	/* border-radius: var(--okx-small-radius); */
+	border: 2px solid var(--ion-color-primary);
+	border-width: 1px;
+	font-size: var(--okx-small-text-font-size);
+	font-family: var(--okx-font-secondary);
+	padding: 3px 12px;
+	margin: 5px 5px 5px 0;
+	display: inline-block;
+}
+
+.pill-action {
+	cursor: pointer;
+}

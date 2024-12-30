@@ -1,0 +1,79 @@
+ion-content div.refer-a-friend {
+	background-image: url(../../assets/images/refer-a-friend.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 40px;
+	background-size: 100% auto;
+}
+/*
+ion-content div.refer-a-friend::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 300px;
+	z-index: 1;
+	background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
+}
+*/
+.raf-card {
+	border-radius: var(--ion-card-radius);
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	margin: 0;
+}
+
+.raf-card ion-card-content {
+	padding: 30px;
+	font-size: var(--ion-font-size);
+}
+
+.raf-card ion-card-content .raf-info-title {
+	padding: 0 2px;
+	font-weight: bold;
+}
+
+.raf-card ion-card-content .raf-info {
+	padding: 15px 15px 30px;
+	text-align: center;
+}
+
+.web ion-content.route-refer-a-friend {
+	background-image: url(../../assets/images/refer-a-friend.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: 100% auto;
+}
+
+.web ion-content div.refer-a-friend {
+	background: transparent none;
+}
+
+.web .raf-card {
+	top: var(--okx-bsmodal-top);
+	bottom: auto;
+	left: auto;
+	right: auto;
+	position: relative;
+	width: 50%;
+	max-width: var(--okx-bsmodal-width-md);
+	min-width: 280px;
+	padding: 10px 30px 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--okx-box-radius);
+}
+
+.web .route-refer-a-friend .title-bar {
+	display: none;
+}
+
+.web .route-refer-a-friend ion-card ion-item {
+	--border-color: var(--ion-color-light);
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "45713251575",
+    "firebase_url": "https://pure-uk.firebaseio.com",
+    "project_id": "pure-uk",
+    "storage_bucket": "pure-uk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45713251575:android:c6dbfca95e7ff0258bc7f2",
+        "android_client_info": {
+          "package_name": "com.fiveloyalty.pureuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45713251575-q9h0930tm0k2483cj3eqicpfero4sped.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45713251575-q9h0930tm0k2483cj3eqicpfero4sped.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

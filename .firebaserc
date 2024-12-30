@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "pure-uk"
+  },
+  "targets": {
+    "pure-uk": {
+      "hosting": {
+        "prod": [
+          "pure-uk"
+        ],
+        "dev": [
+          "pure-uk-dev"
+        ],
+        "web": [
+          "pure-uk-dev-web"
+        ]
+      }
+    }
+  }
+}

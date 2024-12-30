@@ -1,0 +1,32 @@
+.web .route-faq {
+	--background: transparent none;
+	--ion-color-white: transparent;
+}
+
+.web #main > ion-content.route-faq > .ion-padding {
+	position: fixed;
+	/* left: 50%;
+	top: 50px;
+	bottom: 50px;
+	width: 560px; */
+	margin-left: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 75%;
+	background-color: #fff;
+	border-radius: var(--okx-box-radius);
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+}
+
+.web .route-faq .ion-padding > div {
+	overflow-y: auto;
+	max-height: 100%;
+	padding-right: 8px;
+}
+
+@media screen and (min-width: 1441px) {
+	.web #main > ion-content.route-faq > .ion-padding {
+		height: 65%;
+	}
+}

@@ -1,0 +1,62 @@
+.web .static.route-locations .buttons-last-slot {
+	display: none;
+}
+/*
+.web ion-header.route-locations + ion-toolbar.dynamic-header,
+.web ion-header.route-locations + .content-spinner + ion-toolbar.dynamic-header {
+	position: absolute;
+	left: 10px;
+	top: 84px !important;
+	width: 60px !important;
+}
+*/
+.web .route-locations .map {
+	width: 65% !important;
+}
+
+.web .route-locations .okx-pullup.map-location-pullup {
+	top: 0 !important;
+	bottom: 0 !important;
+	width: 35%;
+	left: auto;
+	right: 0;
+	margin-left: 0;
+	border-radius: 0;
+	box-shadow: 0 0 32px rgba(0,0,0,0.25);
+}
+
+.web .route-locations .okx-pullup-content {
+	top: 120px;
+	bottom: 32px !important;
+}
+
+.web .map-location-content {
+	align-items: flex-start;
+}
+
+.web .map-location-nav {
+	margin-top: 64px;
+	padding: 0 5px;
+}
+
+@media screen and (max-width: 640px) {
+	.web .route-locations .map {
+		width: 100% !important;
+		height: 70% !important;
+	}
+	.web .route-locations .okx-pullup.map-location-pullup {
+		top: 70% !important;
+		width: 100%;
+		left: 0;
+	}
+	.web .route-locations .okx-pullup-content {
+		top: 32px;
+		bottom: 32px !important;
+	}
+	.web .map-location-content {
+		align-items: center;
+	}
+	.web .map-location-nav {
+		margin-top: 0;
+	}
+}
